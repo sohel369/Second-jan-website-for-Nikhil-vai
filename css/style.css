@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    /* background: #031321; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .image{
+    width: 40%;
+    height: 100%;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .navbars{
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(240, 226, 215);
+}
+.container .image h1{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.container .navbars nav{
+    display: flex;
+    justify-content: center;
+}
+.container .navbars nav ul li{
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 40px;
+}
+.container .navbars nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.container .navbars nav ul li a.active{
+    color: tomato;
+    text-decoration: underline;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding-left: 40px;
+}
+.content p{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 80px;
+}
+.content p.contentp{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.content h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.btn1{
+    padding: 10px 30px;
+    color: #000;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.btn1:hover{
+    background: green;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .container .image{
+        width: 100%;
+        height: 100%;
+    }
+    .container .navbars{
+        position: relative;
+        width: 100%;
+        height: 100vh auto;
+    }
+}
